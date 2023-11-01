@@ -6,7 +6,30 @@
   height: 40vmin;
   pointer-events: none;
 }
-
+.projectsUl{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.projectsLi{
+  display: block;
+  margin-left: 10px;
+}
+.projectFilters{
+  display: flex;
+  position: relative;
+  list-style-type: none;
+}
+.filterBar {
+  display: inline-block;
+  height: 20px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+.filterBar.active {
+  background-color: azure;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
